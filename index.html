@@ -2,8 +2,18 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>FIGMA | Макеты для верстки — Верстка страницы</title>
 	<meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/intlTelInput.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/base.css">
 </head>
 <body>
@@ -11,7 +21,7 @@
     <!-- Начало: Данный блок удалять нельзя -->
     <div class="maketforfigma">
         <a href="https://t.me/s/FigmaToHTML" target="_blank">
-            <img src="img/logo.png">
+            <img src="images/logo.png">
         </a>
         <div>
             <p>
@@ -24,9 +34,986 @@
     </div>
     <!-- Конец -->
 
-    <div class="main">
-        В данном блоке размещается верстка
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="logo" href="#">
+                    INNOMA
+                    <span>.VC</span>
+                </a>
+                <div class="burger-menu">
+                    <a class="burger-menu__button" href="">
+                        <span class="burger-menu__line"></span>
+                        <span class="burger-menu__line"></span>
+                    </a>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#who">Кто мы?</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#services">Услуги</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#accelerator">Акселератор</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#events">Новости</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="burger-menu__overlay"></div>
+                </div>
+                <button class="header__button">Войти</button>
+                <div class="input">
+                    <a class="input__button" href="">
+                        <span class="input__line"></span>
+                        <span class="input__line"></span>
+                    </a>
+                    <div class="input__inner">
+                        <h3 class="input__title">Вход</h3>
+                        <form class="input__form" action="">
+                            <input  class="input__form-email" type="email" name="email" placeholder="Е-маил">
+                            <input class="input__form-password" type="password" name="password" placeholder="Пароль">
+                            <button class="input__form-btn" type="submit">Войти</button>
+                        </form>
+                        <a class="input__form-link" href="#">Зарегистрироваться</a>
+                    </div>
+                    <div class="input__overlay"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+     
+    <div class="wrapper">
+        <main class="main">
+            <section class="top">
+                <div class="container-top">
+                    <div class="top__inner">
+                        <h2 class="top__title">Запустите </h2>
+                        <h2 class="top__title">технологический IT-бизнес </h2>
+                        <h2 class="top__title title-little">технологический <span>бизнес</span></h2>
+                        <h2 class="top__title title-little-span">бизнес</h2>
+                        <h2 class="top__title">на международных рынках</h2>
+                        <p class="top__text">Открыт набор заявок на акселератор</p>
+                        <p class="top__text text-little">Старт ближайшего акселератора  <span>15.12.2022</span></p>
+                        <button class="top__button">Подать заявку</button>
+                    </div>
+                </div>
+            </section>   
+            
+            <section class="services" id="services">
+                <div class="container">
+                    <div class="container-services">
+                        <div class="services__inner">
+                            <h3 class="title">Наши услуги</h3>
+                            <div class="services__top">
+                                <h6 class="services__top-title">Аналитические исследования</h6>
+                                <p class="services__top-text">Одним из наших ключевых направлений является анализ технологических трендов на международных рынках.<br>
+                                    Мы проводим анализ на основе публичных исследований McKinsey, BCG, PWC, Deloitte, Accenture, BCG, EY,  Crunchbase, Dealroom, F6S, PitchBook а также агрегируем и анализируем данные из открытых международных источников патенты, медиа, научные публикации
+                                </p>
+                                <button class="services__top-btn">Узнать подробнее</button>
+                                <img class="services__top-img" src="images/services1.png" alt="services">
+                            </div>
+                            <div class="services__bottom">
+                                <h6 class="services__bottom-title">Онлайн акселератор для IT бизнеса</h6>
+                                <p class="services__bottom-text">Онлайн программа аскелерации IT бизнеса позволит вашей команде открыть новые горизонты и возможности для бизнеса на глобальных рынках. В результате программы вы получите возможность презентовать свой проект для международных инвесторов и локальных партнеров</p>
+                                <button class="services__bottom-btn">Узнать подробнее</button>
+                                <img class="services__bottom-img" src="images/services2.png" alt="services">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+ 
+            <section class="for">
+                <div class="container">
+                    <h3 class="title">Для кого мы?</h3>
+                    <div class="for__inner">
+                        <ul class="for__list">
+                            <li class="for__list-item">
+                                <p class="for__item-number">01</p>
+                                <h6 class="for__item-title">IT проекты на стадии идеи</h6>
+                                <p class="for__item-text">Для стартапов, которые планируют привлечь международные инвестиции, протестировать спрос и запустить продукт</p>
+                            </li>
+                            <li class="for__list-item">
+                                <p class="for__item-number">02</p>
+                                <h6 class="for__item-title">Инновационный бизнес</h6>
+                                <p class="for__item-text">Для уже работающего технологического бизнес, позволим найти новые международне рынки сбыта, масштабировать бизнес</p>
+                            </li>
+                            <li class="for__list-item">
+                                <p class="for__item-number">03</p>
+                                <h6 class="for__item-title">Корпорации</h6>
+                                <p class="for__item-text">Для уже работающего технологического бизнес, позволим найти новые международне рынки сбыта, масштабировать бизнес</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="consultation">
+                <div class="consultation-container">
+                    <div class="consultation__inner">
+                        <span class="consultation__title"> Научитесь исследовать иностранные рынки<br>
+                            и откройте новые возможности для своего бизнеса</span>
+                        <p class="consultation__text">Наша команда поможет вам изучить рынки Ближнего Востока, Азии, Латинской Америки и Африки</p>
+                        <button class="consultation__button">Получить консультацию</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="market">
+                <div class="container">
+                    <h3 class="title">С какими рынками мы работаем?</h3>
+                    <div class="market__inner">
+                        <div class="market__slider swiper-container-1 swiper">
+                            <div class="swiper-wrapper">
+                                <div class="market__slider-item swiper-slide">
+                                    <div class="market__box">
+                                        <h3 class="market__title">Чем интересен
+                                            <span>Рынок MENA:</span> 
+                                        </h3>
+                                        <p class="market__text">ОАЭ, Саудовская Аравия,<br> 
+                                            Израиль, Оман, Бахрейн, Катар,<br>
+                                            Тунис, Йемен, Египет, Алжир</p>
+                                        <button class="market__button">Выйти на рынок</button>
+                                        <div class="market__manager">
+                                            <img class="market__manager-img" src="images/photo.png" alt="manager">
+                                            <p class="market__manager-name">
+                                                Фатима 
+                                                <span>Менеджер по MENA</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="market__report">
+                                        <ul class="market__list">
+                                            <li class="market__item">
+                                                <p class="market__item-number">>5,5<span> Млрд</span> </p>
+                                                <p class="market__item-text">Инвестиции pre-seed, seed</p>
+                                            </li>
+                                            <li class="market__item">
+                                                <p class="market__item-number">>300</p>
+                                                <p class="market__item-text">Акселераторов, инкубаторов</p>
+                                            </li>
+                                            <li class="market__item">
+                                                <p class="market__item-number">73</p>
+                                                <p class="market__item-text">Венчурных фонда</p>
+                                            </li>
+                                            <li class="market__item">
+                                                <a class="market__item-link" href="#">
+                                                    <picture class="logo__img">
+                                                        <source srcset="images/arrow_little.svg" media="(max-width: 768px)">
+                                                        <img class="market__item-img" src="images/download.svg" alt="Logo">
+                                                    </picture>
+                                                    <p class="market__item-text">Скачать отчет по рынку MENA</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="market__slider-item swiper-slide">
+                                    <div class="market__box">
+                                        <h3 class="market__title">Чем интересен
+                                            <span>Рынок MENA:</span> 
+                                        </h3>
+                                        <p class="market__text">ОАЭ, Саудовская Аравия,<br> 
+                                            Израиль, Оман, Бахрейн, Катар,<br>
+                                            Тунис, Йемен, Египет, Алжир</p>
+                                        <button class="market__button">Выйти на рынок</button>
+                                        <div class="market__manager">
+                                            <img class="market__manager-img" src="images/photo.png" alt="manager">
+                                            <p class="market__manager-name">
+                                                Фатима 
+                                                <span>Менеджер по MENA</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="market__report">
+                                        <ul class="market__list">
+                                            <li class="market__item">
+                                                <p class="market__item-number">>5,5<span> Млрд</span> </p>
+                                                <p class="market__item-text">Инвестиции pre-seed, seed</p>
+                                            </li>
+                                            <li class="market__item">
+                                                <p class="market__item-number">>300</p>
+                                                <p class="market__item-text">Акселераторов, инкубаторов</p>
+                                            </li>
+                                            <li class="market__item">
+                                                <p class="market__item-number">73</p>
+                                                <p class="market__item-text">Венчурных фонда</p>
+                                            </li>
+                                            <li class="market__item">
+                                                <a class="market__item-link" href="#">
+                                                    <img class="market__item-img" src="images/download.svg" alt="download">
+                                                    <p class="market__item-text">Скачать отчет по рынку MENA</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="market__slider-item swiper-slide">
+                                    <div class="market__box">
+                                        <h3 class="market__title">Чем интересен
+                                            <span>Рынок MENA:</span> 
+                                        </h3>
+                                        <p class="market__text">ОАЭ, Саудовская Аравия,<br> 
+                                            Израиль, Оман, Бахрейн, Катар,<br>
+                                            Тунис, Йемен, Египет, Алжир</p>
+                                        <button class="market__button">Выйти на рынок</button>
+                                        <div class="market__manager">
+                                            <img class="market__manager-img" src="images/photo.png" alt="manager">
+                                            <p class="market__manager-name">
+                                                Фатима 
+                                                <span>Менеджер по MENA</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="market__report">
+                                        <ul class="market__list">
+                                            <li class="market__item">
+                                                <p class="market__item-number">>5,5<span> Млрд</span> </p>
+                                                <p class="market__item-text">Инвестиции pre-seed, seed</p>
+                                            </li>
+                                            <li class="market__item">
+                                                <p class="market__item-number">>300</p>
+                                                <p class="market__item-text">Акселераторов, инкубаторов</p>
+                                            </li>
+                                            <li class="market__item">
+                                                <p class="market__item-number">73</p>
+                                                <p class="market__item-text">Венчурных фонда</p>
+                                            </li>
+                                            <li class="market__item">
+                                                <a class="market__item-link" href="#">
+                                                    <img class="market__item-img" src="images/download.svg" alt="download">
+                                                    <p class="market__item-text">Скачать отчет по рынку MENA</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="market__slider-item swiper-slide">
+                                    <div class="market__box">
+                                        <h3 class="market__title">Чем интересен
+                                            <span>Рынок MENA:</span> 
+                                        </h3>
+                                        <p class="market__text">ОАЭ, Саудовская Аравия,<br> 
+                                            Израиль, Оман, Бахрейн, Катар,<br>
+                                            Тунис, Йемен, Египет, Алжир</p>
+                                        <button class="market__button">Выйти на рынок</button>
+                                        <div class="market__manager">
+                                            <img class="market__manager-img" src="images/photo.png" alt="manager">
+                                            <p class="market__manager-name">
+                                                Фатима 
+                                                <span>Менеджер по MENA</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="market__report">
+                                        <ul class="market__list">
+                                            <li class="market__item">
+                                                <p class="market__item-number">>5,5<span> Млрд</span> </p>
+                                                <p class="market__item-text">Инвестиции pre-seed, seed</p>
+                                            </li>
+                                            <li class="market__item">
+                                                <p class="market__item-number">>300</p>
+                                                <p class="market__item-text">Акселераторов, инкубаторов</p>
+                                            </li>
+                                            <li class="market__item">
+                                                <p class="market__item-number">73</p>
+                                                <p class="market__item-text">Венчурных фонда</p>
+                                            </li>
+                                            <li class="market__item">
+                                                <a class="market__item-link" href="#">
+                                                    <img class="market__item-img" src="images/download.svg" alt="download">
+                                                    <p class="market__item-text">Скачать отчет по рынку MENA</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="accelerator" id="accelerator">
+                <div class="container">
+                    <h3 class="title">Об акселераторе IT бизнеса</h3>
+                    <div class="accelerator__inner">
+                        <p class="accelerator__text">Программа акселератора расчитана на 8 недель интенсивного онлайн  курса с вебинарами приглашенных экспертов по международным рынкам <span>, разборами ваших идей и проектов</span> </p>
+                        <ul class="accelerator__list">
+                            <li class="accelerator__list-item">
+                                <p class="accelerator__item-number">3</p>
+                                <p class="accelerator__item-text">Месяца обучения</p>
+                            </li>
+                            <li class="accelerator__list-item">
+                                <img class="accelerator__item-img" src="images/world.svg" alt="picture">
+                                <p class="accelerator__item-text">Приглашенные эксперты</p>
+                            </li>
+                            <li class="accelerator__list-item">
+                                <img class="accelerator__item-img" src="images/manager.svg" alt="picture">
+                                <p class="accelerator__item-text">Персональный менеджер</p>
+                            </li>
+                        </ul>
+                        <video class="accelerator__video" controls autoplay muted>
+                            <source src="https://archive.org/download/IntroductoryIntelX86ArchitectureAssemblyApplicationsDay1Part4/PR_IntroX86_Day1_Part4.mp4" type="video/mp4">
+                        </video>
+                        <div class="accelerator__poster">
+                            <p class="accelerator__poster-text">Об акселерационной программе</p>
+                            <button class="accelerator__poster-button">
+                                <img class="accelerator__poster-img" src="images/play.svg" alt="play">
+                            </button> 
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="program">
+                <div class="container">
+                    <h3 class="title">Программа акселератора</h3>
+                    <div class="program__inner">
+                        <ul class="program__list">
+                            <li class="program__list-item">
+                                <div class="program__list-box">
+                                    <h6 class="program__item-module">Модуль 1</h6>
+                                    <p class="program__item-title">Тенденции и тренды современного мира</p>
+                                    <p class="program__item-time">4 недели</p>
+                                    <button class="program__item-btn"></button>
+                                </div>    
+                                <ul class="program__sublist">
+                                    <li class="program__sublist-item">
+                                        <p class="program__sublist-text">Тема 1. Куда движутся IT тренды? Аналитика Gartner, разбор отчетов консалтинговых компаний</p>
+                                    </li>
+                                    <li class="program__sublist-item">
+                                        <p class="program__sublist-text">Тема 2. Рынки Ближнего Востока, Азии, Латинской АмерикиТема</p>
+                                    </li>
+                                    <li class="program__sublist-item">
+                                        <p class="program__sublist-text"> 3. Что такое внутренние и внешние инновации? Как искать инновационные идеи?</p>
+                                    </li>
+                                    <li class="program__sublist-item">
+                                        <a class="program__sublist-link" href="#">9 видео роликов, вебинар с приглашенным экспертом</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="program__list-item">
+                                <div class="program__list-box">
+                                    <h6 class="program__item-module">Модуль 2</h6>
+                                    <p class="program__item-title">Стартап подход к созданию международного IT продукта</p>
+                                    <p class="program__item-time">4 недели</p>
+                                    <button class="program__item-btn"></button>
+                                </div>    
+                                <ul class="program__sublist">
+                                    <li class="program__sublist-item">
+                                        <p class="program__sublist-text">Тема 1. Куда движутся IT тренды? Аналитика Gartner, разбор отчетов консалтинговых компаний</p>
+                                    </li>
+                                    <li class="program__sublist-item">
+                                        <p class="program__sublist-text">Тема 2. Рынки Ближнего Востока, Азии, Латинской АмерикиТема</p>
+                                    </li>
+                                    <li class="program__sublist-item">
+                                        <p class="program__sublist-text"> 3. Что такое внутренние и внешние инновации? Как искать инновационные идеи?</p>
+                                    </li>
+                                    <li class="program__sublist-item">
+                                        <a class="program__sublist-link" href="#">9 видео роликов, вебинар с приглашенным экспертом</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="program__list-item">
+                                <div class="program__list-box">
+                                    <h6 class="program__item-module">Модуль 3</h6>
+                                    <p class="program__item-title">Бизнес моделирование и поиск Product Market Fit</p>
+                                    <p class="program__item-time">4 недели</p>
+                                    <button class="program__item-btn"></button>
+                                </div>    
+                                <ul class="program__sublist">
+                                    <li class="program__sublist-item">
+                                        <p class="program__sublist-text">Тема 1. Куда движутся IT тренды? Аналитика Gartner, разбор отчетов консалтинговых компаний</p>
+                                    </li>
+                                    <li class="program__sublist-item">
+                                        <p class="program__sublist-text">Тема 2. Рынки Ближнего Востока, Азии, Латинской АмерикиТема</p>
+                                    </li>
+                                    <li class="program__sublist-item">
+                                        <p class="program__sublist-text"> 3. Что такое внутренние и внешние инновации? Как искать инновационные идеи?</p>
+                                    </li>
+                                    <li class="program__sublist-item">
+                                        <a class="program__sublist-link" href="#">9 видео роликов, вебинар с приглашенным экспертом</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="program__list-item">
+                                <div class="program__list-box">
+                                    <h6 class="program__item-module">Модуль 4</h6>
+                                    <p class="program__item-title">Определение рынка, поиск и исследование Целевой аудитории</p>
+                                    <p class="program__item-time">4 недели</p>
+                                    <button class="program__item-btn"></button>
+                                </div>    
+                                <ul class="program__sublist">
+                                    <li class="program__sublist-item">
+                                        <p class="program__sublist-text">Тема 1. Куда движутся IT тренды? Аналитика Gartner, разбор отчетов консалтинговых компаний</p>
+                                    </li>
+                                    <li class="program__sublist-item">
+                                        <p class="program__sublist-text">Тема 2. Рынки Ближнего Востока, Азии, Латинской АмерикиТема</p>
+                                    </li>
+                                    <li class="program__sublist-item">
+                                        <p class="program__sublist-text"> 3. Что такое внутренние и внешние инновации? Как искать инновационные идеи?</p>
+                                    </li>
+                                    <li class="program__sublist-item">
+                                        <a class="program__sublist-link" href="#">9 видео роликов, вебинар с приглашенным экспертом</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="program__list-item">
+                                <div class="program__list-box">
+                                    <h6 class="program__item-module">Модуль 5</h6>
+                                    <p class="program__item-title">Что такое MVP и почему это важно</p>
+                                    <p class="program__item-time">4 недели</p>
+                                    <button class="program__item-btn"></button>
+                                </div>    
+                                <ul class="program__sublist">
+                                    <li class="program__sublist-item">
+                                        <p class="program__sublist-text">Тема 1. Куда движутся IT тренды? Аналитика Gartner, разбор отчетов консалтинговых компаний</p>
+                                    </li>
+                                    <li class="program__sublist-item">
+                                        <p class="program__sublist-text">Тема 2. Рынки Ближнего Востока, Азии, Латинской АмерикиТема</p>
+                                    </li>
+                                    <li class="program__sublist-item">
+                                        <p class="program__sublist-text"> 3. Что такое внутренние и внешние инновации? Как искать инновационные идеи?</p>
+                                    </li>
+                                    <li class="program__sublist-item">
+                                        <a class="program__sublist-link" href="#">9 видео роликов, вебинар с приглашенным экспертом</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="program__list-item">
+                                <div class="program__list-box">
+                                    <h6 class="program__item-module">Модуль 6</h6>
+                                    <p class="program__item-title">Unit экономика и финансовое моделирование</p>
+                                    <p class="program__item-time">4 недели</p>
+                                    <button class="program__item-btn"></button>
+                                </div>    
+                                <ul class="program__sublist">
+                                    <li class="program__sublist-item">
+                                        <p class="program__sublist-text">Тема 1. Куда движутся IT тренды? Аналитика Gartner, разбор отчетов консалтинговых компаний</p>
+                                    </li>
+                                    <li class="program__sublist-item">
+                                        <p class="program__sublist-text">Тема 2. Рынки Ближнего Востока, Азии, Латинской АмерикиТема</p>
+                                    </li>
+                                    <li class="program__sublist-item">
+                                        <p class="program__sublist-text"> 3. Что такое внутренние и внешние инновации? Как искать инновационные идеи?</p>
+                                    </li>
+                                    <li class="program__sublist-item">
+                                        <a class="program__sublist-link" href="#">9 видео роликов, вебинар с приглашенным экспертом</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="program__list-item">
+                                <div class="program__list-box">
+                                    <h6 class="program__item-module">Модуль 7</h6>
+                                    <p class="program__item-title">Что такое дорожная карта продукта?</p>
+                                    <p class="program__item-time">4 недели</p>
+                                    <button class="program__item-btn"></button>
+                                </div>    
+                                <ul class="program__sublist">
+                                    <li class="program__sublist-item">
+                                        <p class="program__sublist-text">Тема 1. Куда движутся IT тренды? Аналитика Gartner, разбор отчетов консалтинговых компаний</p>
+                                    </li>
+                                    <li class="program__sublist-item">
+                                        <p class="program__sublist-text">Тема 2. Рынки Ближнего Востока, Азии, Латинской АмерикиТема</p>
+                                    </li>
+                                    <li class="program__sublist-item">
+                                        <p class="program__sublist-text"> 3. Что такое внутренние и внешние инновации? Как искать инновационные идеи?</p>
+                                    </li>
+                                    <li class="program__sublist-item">
+                                        <a class="program__sublist-link" href="#">9 видео роликов, вебинар с приглашенным экспертом</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="program__list-item">
+                                <div class="program__list-box">
+                                    <h6 class="program__item-module">Модуль 8</h6>
+                                    <p class="program__item-title">Документы дя международных инвесторов</p>
+                                    <p class="program__item-time">4 недели</p>
+                                    <button class="program__item-btn"></button>
+                                </div>    
+                                <ul class="program__sublist">
+                                    <li class="program__sublist-item">
+                                        <p class="program__sublist-text">Тема 1. Куда движутся IT тренды? Аналитика Gartner, разбор отчетов консалтинговых компаний</p>
+                                    </li>
+                                    <li class="program__sublist-item">
+                                        <p class="program__sublist-text">Тема 2. Рынки Ближнего Востока, Азии, Латинской АмерикиТема</p>
+                                    </li>
+                                    <li class="program__sublist-item">
+                                        <p class="program__sublist-text"> 3. Что такое внутренние и внешние инновации? Как искать инновационные идеи?</p>
+                                    </li>
+                                    <li class="program__sublist-item">
+                                        <a class="program__sublist-link" href="#">9 видео роликов, вебинар с приглашенным экспертом</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="program__list-item">
+                                <div class="program__list-box">
+                                    <h6 class="program__item-module">Модуль 9</h6>
+                                    <p class="program__item-title">Открытие юридического лица. Возможности для стартапов</p>
+                                    <p class="program__item-time">4 недели</p>
+                                    <button class="program__item-btn"></button>
+                                </div>    
+                                <ul class="program__sublist">
+                                    <li class="program__sublist-item">
+                                        <p class="program__sublist-text">Тема 1. Куда движутся IT тренды? Аналитика Gartner, разбор отчетов консалтинговых компаний</p>
+                                    </li>
+                                    <li class="program__sublist-item">
+                                        <p class="program__sublist-text">Тема 2. Рынки Ближнего Востока, Азии, Латинской АмерикиТема</p>
+                                    </li>
+                                    <li class="program__sublist-item">
+                                        <p class="program__sublist-text"> 3. Что такое внутренние и внешние инновации? Как искать инновационные идеи?</p>
+                                    </li>
+                                    <li class="program__sublist-item">
+                                        <a class="program__sublist-link" href="#">9 видео роликов, вебинар с приглашенным экспертом</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="program__list-item">
+                                <h6 class="program__item-module">Демо день </h6>
+                            </li>
+                        </ul>
+                        <button class="program__button">Получить полную программу</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="record">
+                <div class="record-container">
+                    <div class="container">
+                        <div class="record__inner">
+                            <div class="record__info">
+                                <h4 class="record__title">Попадите на радары инвесторов и партнеров</h4>
+                                <p class="record__text">В результате прохождения обучения мы создадим профили вашей компании на всех международных скаутинговых площадках</p>
+                                <button class="record__button">Записаться в акселератор</button>
+                            </div>
+                            <div class="record__logo">
+                                <img class="record__img" src="images/points.svg" alt="points">
+                                <ul class="record__list">
+                                    <li class="record__list-item">
+                                        <img class="record__item-img" src="images/logo1.png" alt="logo">
+                                    </li>
+                                    <li class="record__list-item">
+                                        <img class="record__item-img" src="images/logo2.png" alt="logo">
+                                    </li>
+                                    <li class="record__list-item">
+                                        <img class="record__item-img" src="images/logo3.png" alt="logo">
+                                    </li>
+                                    <li class="record__list-item">
+                                        <img class="record__item-img" src="images/logo4.png" alt="logo">
+                                    </li>
+                                    <li class="record__list-item">
+                                        <img class="record__item-img" src="images/logo5.png" alt="logo">
+                                    </li>
+                                    <li class="record__list-item">
+                                        <img class="record__item-img" src="images/logo6.png" alt="logo">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+ 
+            <section class="result">
+                <div class="container">
+                    <h3 class="title">Что вы получите в результате?</h3>
+                    <div class="result__inner">
+                        <ul class="result__list">
+                            <li class="result__list-item">
+                                <p class="result__item-number">01</p>
+                                <h6 class="result__item-title">Документы по продукту</h6>
+                                <p class="result__item-text">Бизнес план, отчет по анализу рынка, маркетинговый план, unit экономика, список гипотез, проект MVP</p>
+                            </li>
+                            <li class="result__list-item">
+                                <p class="result__item-number">02</p>
+                                <h6 class="result__item-title">Обратная связь от рынка</h6>
+                                <p class="result__item-text">Проведение исследования целевой аудитории позволит сформировать Product market fit</p>
+                            </li>
+                            <li class="result__list-item">
+                                <p class="result__item-number">03</p>
+                                <h6 class="result__item-title">Продвижение продукта</h6>
+                                <p class="result__item-text">Продвижение продукта через аналитические системы партнеров</p>
+                            </li>
+                            <li class="result__list-item">
+                                <p class="result__item-number">04</p>
+                                <h6 class="result__item-title">Подписка на отчеты</h6>
+                                <p class="result__item-text">Подписка на аналитические отчеты по международным рынкам высокотехнологичных сфер</p>
+                            </li>
+                            <li class="result__list-item">
+                                <p class="result__item-number">05</p>
+                                <h6 class="result__item-title">Подписка на отчеты</h6>
+                                <p class="result__item-text">Подписка на аналитические отчеты по международным рынкам высокотехнологичных сфер</p>
+                            </li>
+                            <li class="result__list-item">
+                                <p class="result__item-number">06</p>
+                                <h6 class="result__item-title">Подписка на отчеты</h6>
+                                <p class="result__item-text">Подписка на аналитические отчеты по международным рынкам высокотехнологичных сфер</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="price">
+                <div class="container">
+                    <h3 class="title">Стоимость</h3>
+                    <div class="price__inner">
+                        <ul class="price__list">
+                            <li class="price__list-item">
+                                <img class="price__item-img" src="images/price1.svg" alt="icon">
+                                <h6 class="price__item-title">Анализ международных рынков </h6>
+                                <p class="price__item-question">Что входит в отчет?</p>
+                                <ol class="price__sublist">
+                                    <li class="price__sublist-item">Анализ конкурентов</li>
+                                    <li class="price__sublist-item">Анализ инвесторов</li>
+                                    <li class="price__sublist-item">Размеры рынка (TAM,SAM,SOM)</li>
+                                    <li class="price__sublist-item">Анализ СМИ</li>
+                                    <li class="price__sublist-item">Анализ запрос в сети интернет</li>
+                                </ol>
+                                <ul class="price__box">
+                                    <li class="price__box-item">
+                                        <p class="price__box-title">Готовность</p>
+                                        <p class="price__box-info">7 раб. дней</p>
+                                    </li>
+                                    <li class="price__box-item">
+                                        <p class="price__box-title">Язык</p>
+                                        <p class="price__box-info">рус. / англ.</p>
+                                    </li>
+                                    <li class="price__box-item">
+                                        <p class="price__box-title">Стоимость</p>
+                                        <p class="price__box-info">$1 000 </p>
+                                    </li>
+                                </ul>
+                                <button class="price__item-btn">Оставить заявку</button>
+                            </li>
+                            <li class="price__list-item">
+                                <img class="price__item-img" src="images/price2.svg" alt="icon">
+                                <h6 class="price__item-title">Упаковка стартапа под локальные рынки</h6>
+                                <p class="price__item-question">Что входит в услугу?</p>
+                                <ol class="price__sublist">
+                                    <li class="price__sublist-item">Анализ локальных рынков</li>
+                                    <li class="price__sublist-item">Бизнес план </li>
+                                    <li class="price__sublist-item">Питч презентация</li>
+                                    <li class="price__sublist-item">Финансовый план </li>
+                                    <li class="price__sublist-item">Расчет юнит экономики</li>
+                                    <li class="price__sublist-item">Проведение каст дева </li>
+                                </ol>
+                                <ul class="price__box">
+                                    <li class="price__box-item">
+                                        <p class="price__box-title">Готовность</p>
+                                        <p class="price__box-info">7 раб. дней</p>
+                                    </li>
+                                    <li class="price__box-item">
+                                        <p class="price__box-title">Язык</p>
+                                        <p class="price__box-info">рус. / англ.</p>
+                                    </li>
+                                    <li class="price__box-item">
+                                        <p class="price__box-title">Стоимость</p>
+                                        <p class="price__box-info">$1 000 </p>
+                                    </li>
+                                </ul>
+                                <button class="price__item-btn">Оставить заявку</button>
+                            </li>
+                            <li class="price__list-item">
+                                <img class="price__item-img" src="images/price3.svg" alt="icon">
+                                <h6 class="price__item-title">Акселератор вашего бизнеса</h6>
+                                <p class="price__item-question">Что входит в акселератор?</p>
+                                <ol class="price__sublist">
+                                    <li class="price__sublist-item">Онлайн доступ к курсам</li>
+                                    <li class="price__sublist-item">Документы для бизнеса</li>
+                                    <li class="price__sublist-item">Питч презентация</li>
+                                    <li class="price__sublist-item">Демо день </li>
+                                    <li class="price__sublist-item price-little">Расчет юнит экономики </li>
+                                    <li class="price__sublist-item">Провдижение по результатам </li>
+                                </ol>
+                                <ul class="price__box">
+                                    <li class="price__box-item">
+                                        <p class="price__box-title">Готовность</p>
+                                        <p class="price__box-info">7 раб. дней</p>
+                                    </li>
+                                    <li class="price__box-item">
+                                        <p class="price__box-title">Язык</p>
+                                        <p class="price__box-info">рус. / англ.</p>
+                                    </li>
+                                    <li class="price__box-item">
+                                        <p class="price__box-title">Стоимость</p>
+                                        <p class="price__box-info">$1 000</p>
+                                    </li>
+                                </ul>
+                                <button class="price__item-btn">Оставить заявку</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="who" id="who">
+                <div class="container">
+                    <h3 class="title">Кто мы?</h3>
+                    <div class="who__inner">
+                        <img class="who__img" src="images/who.png" alt="who">
+                        <div class="who__info">
+                            <p class="who__text"><span>INNOMA.VC</span> -  Международное аналитическое агентство по запуску IT бизнеса на локальных рынках регионов Азии, Ближнего Востока, Латинской Америки, Африки.</p>
+                            <p class="who__text">Наша команда состоит из профессионалов своего дела и основной нашей целью является помощь IT компаниям получить необходимые знания и пакеты документов, чтобы успешно запустить свой продукт на международных рынках. </p>
+                            <p class="who__text who-little"><span>Иннома</span> -  международное аналитическое агентство направленное на помощь стартапам в  в поиске инвесторов, партнеров в регионах Ближнего Востока и Юго-Восточной Азии
+                                <br>Нашей командой пройдено более 20 акселераторов, бизнес инкубаторов и мы знаем как сделать продукт эффективным для вас</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="person">
+                <div class="container">
+                    <div class="person__inner">
+                        <img class="person__img" src="images/person.png" alt="person">
+                        <div class="person__info">
+                            <p class="person__text">Всем привет!<br> Меня зовут Роман. Последние 6 лет я являюсь частью инновационной экосистемы СНГ,  прошел путь от проектного менеджера до руководителя продукта по автоматизированному скаутингу и скорингу стартапов. За 6 лет работы я увидел  множество ошибок и отсутствие ориентации акселерационных программ под запросы стартапов. Все акселераторы выполнялись ради акселераторв и выполнения КПЭ. </p>
+                            <p class="person__name">
+                                Роман Гайн
+                                <span>Основатель INNOMA.VC</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="photo">
+                <div class="container">
+                    <div class="photo__inner">
+                        <div class="photo__slider swiper-container-3 swiper">
+                            <div class="swiper-wrapper">
+                                <div class="photo__slider-img swiper-slide">
+                                    <img class="photo__img" src="images/photo1.png" alt="photo">
+                                </div>
+                                <div class="photo__slider-img swiper-slide">
+                                    <img class="photo__img" src="images/photo2.png" alt="photo">
+                                </div>
+                                <div class="photo__slider-img swiper-slide">
+                                    <img class="photo__img" src="images/photo3.png" alt="photo">
+                                </div>
+                                <div class="photo__slider-img swiper-slide">
+                                    <img class="photo__img" src="images/photo4.png" alt="photo">
+                                </div>
+                                <div class="photo__slider-img swiper-slide">
+                                    <img class="photo__img" src="images/photo5.png" alt="photo">
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </section>
+
+            <section class="experts">
+                <div class="container">
+                    <h3 class="title">Эксперты и трекеры программы</h3>
+                    <div class="experts__inner">
+                        <div class="experts__slider swiper-container-2 swiper">
+                            <div class="swiper-wrapper">
+                                <div class="experts__slider-item swiper-slide">
+                                    <div class="box">
+                                        <img class="experts__slider-img" src="images/experts1.png" alt="expert">
+                                    </div>
+                                    <p class="experts__slider-title">Юрий Ким</p>
+                                    <p class="experts__slider-text">Проведение исследования целевой аудитории позволит сформировать Product market fit</p>
+                                </div>
+                                <div class="experts__slider-item swiper-slide">
+                                    <div class="box">
+                                        <img class="experts__slider-img" src="images/experts2.png" alt="expert">
+                                    </div>
+                                    <p class="experts__slider-title">Эшли Абрамс</p>
+                                    <p class="experts__slider-text">Проведение исследования целевой аудитории позволит сформировать Product market fit</p>
+                                </div>
+                                <div class="experts__slider-item swiper-slide">
+                                    <div class="box">
+                                        <img class="experts__slider-img" src="images/experts3.png" alt="expert">
+                                    </div>
+                                    <p class="experts__slider-title">Фатими Юсуф</p>
+                                    <p class="experts__slider-text">Проведение исследования целевой аудитории позволит сформировать Product market fit</p>
+                                </div>
+                                <div class="experts__slider-item swiper-slide">
+                                    <div class="box">
+                                        <img class="experts__slider-img" src="images/experts4.png" alt="expert">
+                                    </div>
+                                    <p class="experts__slider-title">Майкл Донован</p>
+                                    <p class="experts__slider-text">Проведение исследования целевой аудитории позволит сформировать Product market fit</p>
+                                </div>
+                                <div class="experts__slider-item swiper-slide">
+                                    <div class="box">
+                                        <img class="experts__slider-img" src="images/experts1.png" alt="expert">
+                                    </div>
+                                    <p class="experts__slider-title">Юрий Ким</p>
+                                    <p class="experts__slider-text">Проведение исследования целевой аудитории позволит сформировать Product market fit</p>
+                                </div>
+                                <div class="experts__slider-item swiper-slide">
+                                    <div class="box">
+                                        <img class="experts__slider-img" src="images/experts2.png" alt="expert">
+                                    </div>
+                                    <p class="experts__slider-title">Эшли Абрамс</p>
+                                    <p class="experts__slider-text">Проведение исследования целевой аудитории позволит сформировать Product market fit</p>
+                                </div>
+                                <div class="experts__slider-item swiper-slide">
+                                    <div class="box">
+                                        <img class="experts__slider-img" src="images/experts3.png" alt="expert">
+                                    </div>
+                                    <p class="experts__slider-title">Фатими Юсуф</p>
+                                    <p class="experts__slider-text">Проведение исследования целевой аудитории позволит сформировать Product market fit</p>
+                                </div>
+                                <div class="experts__slider-item swiper-slide">
+                                    <div class="box">
+                                        <img class="experts__slider-img" src="images/experts4.png" alt="expert">
+                                    </div>
+                                    <p class="experts__slider-title">Майкл Донован</p>
+                                    <p class="experts__slider-text">Проведение исследования целевой аудитории позволит сформировать Product market fit</p>
+                                </div>
+                            </div>
+                            <div class="experts__slider-btn swiper-button-prev">
+                                <img src="images/prev.svg" alt="prev">
+                            </div>
+                            <div class="experts__slider-btn swiper-button-next">
+                                <img src="images/next.svg" alt="next">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="partners">
+                <div class="container">
+                    <h3 class="title">Наши партнеры</h3>
+                    <div class="partners__inner">
+                        <ul class="partners__list">
+                            <li class="partners__list-item">
+                                <img class="partners__item-img" src="images/partner1.png" alt="logo">
+                            </li>
+                            <li class="partners__list-item">
+                                <img class="partners__item-img" src="images/partner2.png" alt="logo">
+                            </li>
+                            <li class="partners__list-item">
+                                <img class="partners__item-img" src="images/partner3.png" alt="logo">
+                            </li>
+                            <li class="partners__list-item">
+                                <img class="partners__item-img" src="images/partner4.png" alt="logo">
+                            </li>
+                            <li class="partners__list-item">
+                                <img class="partners__item-img" src="images/partner5.png" alt="logo">
+                            </li>
+                            <li class="partners__list-item">
+                                <img class="partners__item-img" src="images/partner6.png" alt="logo">
+                            </li>
+                            <li class="partners__list-item">
+                                <img class="partners__item-img" src="images/partner7.png" alt="logo">
+                            </li>
+                            <li class="partners__list-item">
+                                <img class="partners__item-img" src="images/partner8.png" alt="logo">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="join">
+                <div class="container">
+                    <div class="join__inner">
+                        <h3 class="join__title">Мы создаем международное сообщество экспертов и партнеров</h3>
+                        <p class="join__text">Если вы или ваш бизнес может быть полезе IT командам при выходе на международные рынки,  приглашем вас стать нашим партнером</p>
+                        <button class="join__button">Стать партнером</button>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="events" id="events">
+                <div class="container">
+                    <h3 class="title">Мероприятия и события</h3>
+                    <div class="events__inner">
+                        <ul class="events__list">
+                            <li class="events__list-item">
+                                <img class="events__item-img" src="images/event1.png" alt="event">
+                                <h6 class="events__item-title">Новый отчет по MENA</h6>
+                                <p class="events__item-text">Аналитический отчет по рынкам Ближнего Востока (инвесторы, объем раундов, ТОП сферы)</p>
+                                <p class="events__item-data">22.11.2022</p>
+                            </li>
+                            <li class="events__list-item">
+                                <img class="events__item-img" src="images/event2.png" alt="event">
+                                <h6 class="events__item-title">Вебинар по особенностям рынков Ближнего Востока</h6>
+                                <p class="events__item-text">Поговорим с экспертами рынков в формате дискуссии</p>
+                                <p class="events__item-data">22.11.2022</p>
+                            </li>
+                            <li class="events__list-item">
+                                <img class="events__item-img" src="images/event3.png" alt="event">
+                                <h6 class="events__item-title">Вебинар по особенностям рынков Ближнего Востока</h6>
+                                <p class="events__item-text">Поговорим с экспертами рынков в формате дискуссии</p>
+                                <p class="events__item-data">22.11.2022</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="application">
+                <div class="container">
+                    <div class="application__inner">
+                        <div class="application__box">
+                            <h3 class="application__title">Остались вопросы?</h3>
+                            <p class="application__text">Оставьте заявку и наша команда свяжется с вами</p>
+                            <p class="application__info">Или напишите нам:</p>
+                            <div class="application__social">
+                                <a class="application__social-icon" href="#">Telegram</a>
+                                <a class="application__social-icon" href="#">Whatsapp</a>
+                            </div>
+                        </div>
+                        <form class="application__form" action="">
+                            <input class="application__form-name" type="text" name="name" placeholder="Имя">
+                            <input class="application__form-email" type="email" name="email" placeholder="Почта">
+                            <input class="application__form-tel" id="phone" type="tel ">
+                            <button class="application__form-button" type="submit">Оставить заявку</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+                    
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__logo">
+                        <a class="logo" href="#">
+                            INNOMA
+                            <span>.VC</span>
+                        </a>
+                        <p class="footer__text">Все права защищены</p>
+                    </div>
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Кто мы?</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Услуги</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Акселератор</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Новости</a>
+                        </li>
+                    </ul>
+                    <div class="footer__info">
+                        <p class="footer__address">Dubai, Single Business Tower 1503, Business Bay</p>
+                        <a class="footer__link" href="mailto:Sales@innoma.vc">Sales@innoma.vc</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+         
     </div>
+    <script src="js/main.min.js"></script>
 
 </body>
 </html>
